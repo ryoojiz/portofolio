@@ -54,9 +54,12 @@ body {
 }
 .platform-link{
     opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+    /* box-shadow: 10px 0 10px rgba(0, 0, 0, 1); */
 }
 .platform-link:hover{
     opacity: 1;
+    scale: 1.1;    
 }
 button {
     line-height: 0;
@@ -99,14 +102,18 @@ button:hover {
 .draggable {
     position: absolute;
     background: white;
-    min-width: 100px;
-    min-height: 100px;
     cursor: grab;
     user-select: none;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     box-sizing: border-box;
 }
-
+.draggable-content{
+    overflow: hidden; 
+    height: 100%; 
+    width: 100%;
+    position: relative; 
+    display: flex;
+}
 .draggable:hover {
     outline: calc(2px / var(--canvas-scale, 1)) solid #0D99FF;
     outline-offset: 0;

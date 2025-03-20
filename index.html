@@ -33,26 +33,25 @@
         </div>
         <div id="canvas-container">
             <div id="canvas-content">
-                <!-- You can place your divs here -->
-                <div class="draggable" style="border-radius: 10px; top:100px; left: 100px; width: 500px; height: 100px;">
+                <div class="draggable" style="border-radius: 10px; top:800px; left: 300px; width: 500px; height: 100px;">
                     <div class="draggable-header">Music</div>
-                    <div style="overflow: hidden; border-radius: 10px; height: 100%; position: relative; display: flex;">
+                    <div class="draggable-content" style="border-radius: 10px;">
                         <img draggable="false" style=" user-select: none; filter:blur(10px); width: 200%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/id/d/d2/Reza_Keyakinan.jpg" id="coverart-bg">
                         <div style="height: 100%; width:100%; z-index: 0; display: flex; align-items: center; padding: 10px; box-sizing: border-box;">
                             <img id="coverart" draggable="false" style="border: 1px solid #00000038; height: 100%; border-radius: 10%; width: auto; object-fit: contain;" src="https://upload.wikimedia.org/wikipedia/id/d/d2/Reza_Keyakinan.jpg">
                             <div style="padding-left: 10px; max-width: calc(100% - 100px); ">
                                 <h1 id="songtitle" style="color: #FFFFFF; text-shadow: 0 0 10px rgba(0,0,0,0.5); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">White Letter</h1>
                                 <div style="display: flex; align-items: center; gap: 8px;">
-                                    <p id="songartist" style="color: rgba(255,255,255,0.9); text-shadow: 0 0 10px rgba(0,0,0,0.5); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 0;">GonGoss</p>
+                                    <p id="songartist" style="color: rgba(255,255,255,0.8); text-shadow: 0 0 10px rgba(0,0,0,0.5); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 0;">GonGoss</p>
                                     <div style="display: flex; gap: 8px;">
                                         <a id="youtube-link" href="#" target="_blank" title="Search on YouTube">
-                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                                            <img src="Youtube.svg" class="platform-link" height="14">
                                         </a>
                                         <a id="spotify-link" href="#" target="_blank" title="Search on Spotify">
-                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                                            <img src="Spotify.svg" class="platform-link" height="16">
                                         </a>
                                         <a id="apple-music-link" href="#" target="_blank" title="Search on Apple Music">
-                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M23.997 6.124c0-.738-.065-1.47-.24-2.19-.317-1.31-1.062-2.31-2.18-3.043C20.49.303 19.198 0 17.91 0c-1.348 0-2.49.317-3.39 1.06-.605.5-1.052 1.132-1.33 1.893-.21.57-.293 1.157-.293 1.776v12.95c0 .478.097.95.293 1.42.396.937 1.055 1.62 1.945 2.024.84.378 1.748.57 2.708.57.998 0 1.934-.21 2.79-.63.785-.39 1.404-.95 1.84-1.68.396-.66.594-1.38.594-2.167 0-.777-.183-1.52-.55-2.234-.367-.715-.936-1.286-1.706-1.71-.772-.426-1.625-.634-2.57-.634-.537 0-1.043.104-1.517.314-.474.21-.87.497-1.187.864-.317.366-.474.774-.474 1.222 0 .408.127.78.38 1.117.252.337.593.606 1.02.807.428.2.87.3 1.323.3.51 0 .984-.114 1.42-.344.435-.23.784-.544 1.046-.94.26-.396.392-.84.392-1.332 0-.437-.124-.828-.37-1.173-.246-.345-.57-.62-.974-.823-.403-.203-.856-.304-1.356-.304-.486 0-.94.095-1.36.285-.42.19-.766.456-1.04.797-.274.34-.41.724-.41 1.152v8.27c0 .914.274 1.71.823 2.387.55.676 1.254 1.193 2.108 1.55.854.355 1.766.533 2.735.533 1.288 0 2.487-.26 3.595-.777 1.11-.518 1.99-1.223 2.64-2.115.648-.89.972-1.858.972-2.903V6.124z"/></svg>
+                                            <img src="AppleMusic.svg" class="platform-link" height="16">
                                         </a>
                                     </div>
                                 </div>
@@ -61,8 +60,14 @@
                     </div>
                     <script src="lastfm.js"></script>
                 </div>
-                <div class="draggable" style="top:250px; left: 600px; width: 600px; height: 200px;">
+                <div class="draggable" style="top:500px; left: 600px; width: 600px; height: 200px;">
                     <div class="draggable-header">About Me</div>
+                </div>
+                <div class="draggable" style="top:250px; left: 400px; width: 450px; height: 30px; background: radial-gradient(circle at center, #161616 0%, #000000 100%);">
+                    <div class="draggable-header">Storefront</div>
+                    <div class="draggable-content" style="align-items: center; width: 100%;">
+                        <a href="https://store.ryj.my.id"><h4 style="text-align: center; width: 100%; color: white;">looking for the ryoojiz studio storefront? click me!</h4></a>
+                    </div>     
                 </div>
             </div>
         </div>
