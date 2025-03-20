@@ -1,0 +1,128 @@
+@font-face {
+    font-family: Inter;
+    src: url(Inter-VariableFont_opsz\,wght.ttf);
+}
+p{
+    margin: 0px;
+    font-family: Inter, sans-serif;
+}
+h1{
+    margin: 0px;
+}
+h4{
+    margin: 0px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.sidebar {
+    padding: 8px;
+    background-color: #2c2c2c;
+    width: 240px;
+    height: 100%;
+}
+
+.sidebar.left {
+    z-index: 2;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2);
+    border-right: 1px solid #424242;
+}
+.floating-window{
+    position: absolute;
+    top:10px;
+    left:10px;
+    border-radius: 12px;
+    z-index: 2;
+    border: 1px solid #424242;
+    padding: 8px;
+    background-color: #2c2c2c;
+    width: fit-content;
+    height: 30px;
+}
+.hide {
+    display: none;
+}
+.platform-link{
+    opacity: 0.8;
+}
+.platform-link:hover{
+    opacity: 1;
+}
+button {
+    line-height: 0;
+    background-color: #2c2c2c;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #383838;
+}
+.sidebar.right {
+    z-index: 2;
+    /* box-shadow: 0px 0 10px rgba(0, 0, 0, 1); */
+    border-left: 1px solid #424242;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#canvas-container {
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+    flex-grow: 1;
+    position: absolute;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    cursor: url('cursor.png') 5 5, auto;
+}
+
+#canvas-content {
+    position: absolute;
+    transform-origin: 0 0;
+}
+
+.draggable {
+    position: absolute;
+    background: white;
+    min-width: 100px;
+    min-height: 100px;
+    cursor: grab;
+    user-select: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.draggable:hover {
+    outline: calc(2px / var(--canvas-scale, 1)) solid #0D99FF;
+    outline-offset: 0;
+}
+
+.draggable-header {
+    position: absolute;
+    top: -15px;
+    color: #666;
+    font-size: 11px;
+    pointer-events: none;
+    transform: scale(calc(1 / var(--canvas-scale, 1)));
+    transform-origin: left bottom;
+    cursor: grab;  /* Added cursor style */
+}
+
+.draggable:hover .draggable-header {
+    color: #0D99FF;
+}
