@@ -40,7 +40,15 @@
                         <div style="height: 100%; width:100%; z-index: 0; display: flex; align-items: center; padding: 10px; box-sizing: border-box;">
                             <img id="coverart" draggable="false" style="border: 1px solid #00000038; height: 100%; border-radius: 10%; width: auto; object-fit: contain;" src="https://upload.wikimedia.org/wikipedia/id/d/d2/Reza_Keyakinan.jpg">
                             <div style="padding-left: 10px; max-width: calc(100% - 100px); ">
-                                <h1 id="songtitle" style="color: #FFFFFF; text-shadow: 0 0 10px rgba(0,0,0,0.5); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">White Letter</h1>
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <h1 id="songtitle" style="color: #FFFFFF; text-shadow: 0 0 10px rgba(0,0,0,0.5); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">White Letter</h1>
+                                    <svg width="30" height="30" viewBox="0 0 100 100" style="transform: rotate(-90deg)">
+                                        <circle id="progress-circle" stroke-dasharray="125.6" stroke-dashoffset="125.6" r="20" cx="50" cy="50" fill="transparent" stroke="#ffff" stroke-width="40px">
+                                            <animate id="progress-animation" attributeName="stroke-dashoffset" dur="15s" to="0" fill="freeze" />
+                                        </circle>
+                                    </svg>
+                                      
+                                </div>
                                 <div style="display: flex; align-items: center; gap: 8px;">
                                     <p id="songartist" style="color: rgba(255,255,255,0.8); text-shadow: 0 0 10px rgba(0,0,0,0.5); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 0;">GonGoss</p>
                                     <div style="display: flex; gap: 8px;">

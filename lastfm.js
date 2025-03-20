@@ -25,6 +25,12 @@ async function fetchNowPlaying() {
             document.getElementById("songartist").innerText = artist;
             document.getElementById("coverart").src = albumArt;
             document.getElementById("coverart-bg").src = albumArt;
+
+            // Reset and restart progress animation
+            const progressCircle = document.getElementById('progress-circle');
+            const animation = document.getElementById('progress-animation');
+            progressCircle.setAttribute('stroke-dashoffset', '125.6');
+            animation.beginElement();
         }
     } catch (error) {
         console.error("Error fetching data:", error);
@@ -32,4 +38,4 @@ async function fetchNowPlaying() {
 }
 
 fetchNowPlaying();
-setInterval(fetchNowPlaying, 30000);
+setInterval(fetchNowPlaying, 30000); // Refresh every 30 seconds
