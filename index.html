@@ -33,10 +33,10 @@
         </div>
         <div id="canvas-container">
             <div id="canvas-content">
-                <div class="draggable" style="border-radius: 10px; top:800px; left: 300px; width: 500px; height: 100px;">
+                <div id="music" class="draggable" style="border-radius: 10px; top:800px; left: 300px; width: 500px; height: 100px;">
                     <div class="draggable-header">Music</div>
                     <div class="draggable-content" style="border-radius: 10px;">
-                        <img draggable="false" style=" user-select: none; filter:blur(10px); width: 200%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/id/d/d2/Reza_Keyakinan.jpg" id="coverart-bg">
+                        <img draggable="false" style="user-select: none; filter:blur(10px); width: 200%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); object-fit: cover; animation: rotate 30s linear infinite;" src="https://upload.wikimedia.org/wikipedia/id/d/d2/Reza_Keyakinan.jpg" id="coverart-bg">
                         <div style="height: 100%; width:100%; z-index: 0; display: flex; align-items: center; padding: 10px; box-sizing: border-box;">
                             <img id="coverart" draggable="false" style="border: 1px solid #00000038; height: 100%; border-radius: 10%; width: auto; object-fit: contain;" src="https://upload.wikimedia.org/wikipedia/id/d/d2/Reza_Keyakinan.jpg">
                             <div style="padding-left: 10px; max-width: calc(100% - 100px); ">
@@ -47,7 +47,6 @@
                                             <animate id="progress-animation" attributeName="stroke-dashoffset" dur="15s" to="0" fill="freeze" />
                                         </circle>
                                     </svg>
-                                      
                                 </div>
                                 <div style="display: flex; align-items: center; gap: 8px;">
                                     <p id="songartist" style="color: rgba(255,255,255,0.8); text-shadow: 0 0 10px rgba(0,0,0,0.5); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 0;">GonGoss</p>
@@ -69,12 +68,19 @@
                     <script src="lastfm.js"></script>
                 </div>
                 <div class="draggable" style="top:500px; left: 600px; width: 600px; height: 200px;">
-                    <div class="draggable-header">About Me</div>
+                    <div class="draggable-header">About Mätti</div>
                 </div>
                 <div class="draggable" style="top:250px; left: 400px; width: 450px; height: 30px; background: radial-gradient(circle at center, #161616 0%, #000000 100%);">
                     <div class="draggable-header">Storefront</div>
                     <div class="draggable-content" style="align-items: center; width: 100%;">
                         <a href="https://store.ryj.my.id"><h4 style="text-align: center; width: 100%; color: white;">looking for the ryoojiz studio storefront? click me!</h4></a>
+                    </div>     
+                </div>
+                <div class="draggable" style="top:400px; left: 350px; width: 110px; height: 200px; background: black ;">
+                    <div class="draggable-header">hidup blonde</div>
+                    <div class="draggable-content" style="align-items: center; width: 100%;">
+
+                        <iframe width="110" height="200" src="https://www.myinstants.com/instant/hidup-lonte-62214/embed/" frameborder="0" scrolling="no"></iframe>
                     </div>     
                 </div>
             </div>

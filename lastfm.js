@@ -38,4 +38,4 @@ async function fetchNowPlaying() {
 }
 
 fetchNowPlaying();
-setInterval(fetchNowPlaying, 30000); // Refresh every 30 seconds
+setInterval(fetchNowPlaying, 15000); // Refresh every 30 seconds

@@ -133,3 +133,14 @@ button:hover {
 .draggable:hover .draggable-header {
     color: #0D99FF;
 }
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -25%) rotate(0deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    to {
+        transform: translate(-50%, -25%) rotate(720deg);
+    }
+}
